@@ -3,12 +3,9 @@ from . import main
 from ..request import get_movies, get_movie, search_movie
 from ..models import Review
 from .forms import ReviewForm
-# Review = review.Review
-
 
 @main.route('/')
 def index():
-
     '''
     View root page function that returns the index page and its data
     '''
@@ -17,7 +14,7 @@ def index():
     popular_movies = get_movies('popular')
     upcoming_movie = get_movies('upcoming')
     now_showing_movie = get_movies('now_playing')
-    title = 'Home - Karibu to The best Movie Review Website Online'
+    title = 'Home To The best Movie Review Website Online'
 
     search_movie = request.args.get('movie_query')
 
