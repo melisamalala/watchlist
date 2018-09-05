@@ -1,9 +1,14 @@
 import unittest
-from app.models import Review
+from app.models import Review, User
+from app import db
 
 class TestReview(unittest.TestCase):
 
     def setUp(self):
+
+
+
+
         self.new_review = Review(12345,'Review for movies',"https://image.tmdb.org/t/p/w500/jdjdjdjn",'This movie is the best thing since sliced bread')
 
 
